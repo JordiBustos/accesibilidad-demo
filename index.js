@@ -195,7 +195,7 @@ function resaltarEnlacesClosure() {
         for (let i = 0; i < arrOfLinks.length; i++) {
             start ? changeLinkColor(arrOfLinks) : normalLinkColor(arrOfLinks, arrOfLinkStyles);
         }
-        start ? (restaltadoOnOff.textContent = '(si)') : (restaltadoOnOff.textContent = '(no)')
+        start ? (resaltadoOnOff.textContent = '(si)') : (resaltadoOnOff.textContent = '(no)')
         start = !start;
     }
     return resaltarEnlaces
