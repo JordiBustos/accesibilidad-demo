@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    line-height:1.5rem;
+    word-spacing:1px;
+    margin:0;
+    padding:0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size:16px;
+}
+
+a {
+    margin-top: 1rem;
+    padding:1rem 1rem;
+    color:rgb(46, 46, 46);
+}
+
+
+h1 {
+    font-size:3rem;
+}
+
+h2 {
+    font-size:2rem;
+}
+
+h3 {
+    font-size:1.5rem;
+}
+
+h4 {
+    font-size:1.2rem;
+}
+
+p {
+    font-size:1rem;
+}
+
+#button_section {
+    position: relative;
+}
+
+#button_container {
+    position: fixed;
+    bottom: 11%;
+    left: 0%;
+    align-items: center;
+    justify-content: center;
+    flex-flow:row wrap;
+    gap: 2px;
+
+    width:50%;
+    padding:1rem 1rem;
+    background-color: black;
+}
+#button_container button {
+    padding:1rem 1rem;
+    background-color: white;
+    color:black;
+    border:2px solid black;
+    flex-basis:49%;
+    font-size:1.1rem;
+    transition:.2s all;
+}
+
+#button_container button:hover {
+    background-color:black;
+    color:white;
+    border: 1px solid white;
+}
+
+.parrafo {
+    background-color: black;
+    color:white;
+    padding:2rem 2rem;
+    margin:2rem auto;
+    width:50%;
+}
+
+section {
+    text-align:center;
+}
+
+h1, h2, h3, h4 {
+    margin-top:1rem;
+}
+
+#show-hide {
+    background-color: #0072af;
+    color: white;
+    position: fixed;
+    bottom:2%;
+    left: 1%;
+    padding:1.1rem 1rem;
+    border-radius:50%;
+    width:5vw;
+}
+.no-accesible {
+    margin-top:3rem;
+    font-size:1.3rem;
+}

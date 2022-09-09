@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1 class="accesibilidad-texto">Título demo</h1>
+        <p class="accesibilidad-texto parrafo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non recusandae sit modi voluptate laborum vero et, provident distinctio numquam eius eum mollitia a aliquam facere repudiandae itaque corrupti expedita cumque?
+            Corrupti animi quis obcaecati nemo aspernatur dolor tempore debitis amet iusto quisquam suscipit nobis, error aut labore molestiae expedita aliquam est incidunt dicta adipisci eum distinctio saepe dolorem! Amet, deserunt.
+        </p>
+
+        <h2 class="accesibilidad-texto">Título 2</h2>
+
+        <h3 class="accesibilidad-texto">Título 3</h3>
+
+        <h4 class="accesibilidad-texto">Título 4</h4>
+
+        <a class='accesibilidad-link' href="#">Link 1</a>
+        <a href="#">Link no accesible</a>
+        <a class='accesibilidad-link' href="#">Link 2</a>
+    </section>
+
+    <section id="button_section">
+        <button id="show-hide" onclick={mostrarButtons()}>
+            ICON
+        </button>
+        <div id="button_container">
+            <button onclick={agrandarTexto()}>
+                Agrandar texto <span id="textAugmented"></span>
+            </button>
+            <button onclick={agrandarLineHeight()}>
+                Interlineado <span id="lineHeightAugmented"></span>
+            </button>
+            <button onclick={cambiarAlineacion()}>
+                Alineación del texto <span id="textAlign"></span> 
+            </button>
+            <button onclick={cambiarContraste()}>
+                Cambiar contraste
+            </button>
+            <button onclick={agrandarEspaciado()}>
+                Espaciado entre palabras <span id="wordSpaceAugmented"></span>
+            </button>
+            <button onclick={dislexiaFriendly()}>
+                Dislexia friendly <span id="dislexiaOnOff">(no)</span>
+            </button>
+            <button onclick={resaltarEnlaces()}>
+                Resaltar Enlaces <span id="resaltadoOnOff">(no)</span>
+            </button>
+        </div>
+    </section>
+
+    <p class="no-accesible">
+        Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.
+        Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.
+    </p>
+    <p class="no-accesible">
+        Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.
+        Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.
+        Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.Este texto no está incluido. Este texto no está incluido. Este texto no está incluido. Este texto no está incluido.
+    </p>
+    <script src="index.js"></script>
+</body>
+</html>
