@@ -184,17 +184,18 @@ function agrandarTextoClosure() {
 
 function resaltarEnlacesClosure() {
     const arrOfLinks = document.getElementsByClassName('accesibilidad-link');
+    const resaltadoOnOff = document.getElementById('resaltadoOnOff');
     const arrOfLinkStyles = []
     for (let i = 0; i < arrOfLinkStyles.length; i++) {
         arrOfLinkStyles.push(arrOfLinks[i].style);
     }
-    console.log(arrOfLinkStyles)
     let start = true;
 
     function resaltarEnlaces() {
         for (let i = 0; i < arrOfLinks.length; i++) {
             start ? changeLinkColor(arrOfLinks) : normalLinkColor(arrOfLinks, arrOfLinkStyles);
         }
+        start ? (restaltadoOnOff.textContent = '(si)') : (restaltadoOnOff.textContent = '(no)')
         start = !start;
     }
     return resaltarEnlaces
